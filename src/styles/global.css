@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'GT';
+  src: url('../../public/fonts/gt-regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --accent: 136, 58, 234;
   --accent-light: 224, 204, 250;
@@ -6,19 +14,20 @@
     45deg,
     rgb(var(--accent)),
     rgb(var(--accent-light)) 30%,
-    white 60%
+    '#00BBF9' 60%
   );
 }
 
 html {
-  font-family: system-ui, sans-serif;
-  src: url('../../public/fonts/gt-regular') format('otf');
+  font-family: 'GT';
+  src: url('/public/fonts/gt-regular.ttf');
   background: #ede7de;
   background-size: 224px;
 }
 
 code {
   font-family:
+    'GT',
     Menlo,
     Monaco,
     Lucida Console,
