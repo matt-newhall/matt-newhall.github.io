@@ -77,14 +77,14 @@ p {
 
 [data-is-top='false'] .navbar {
   background-color: #F9CFF2;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
 }
 
 [data-is-top='true'] .navbar {
   background-color: #ede7de;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
 }

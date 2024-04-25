@@ -1,17 +1,17 @@
 ---
-import NavOption from "./NavOption.astro";
+import NavOption from "../NavOption/NavOption.astro";
 ---
 
-<nav class="flex w-screen justify-center align-center text-center sticky top-8">
+<nav class="transition-colors flex w-screen justify-center align-center text-center sticky top-8">
   <div class="navbar w-max px-12 pt-4 pb-3 rounded-full">
     <ul class="inline-block">
-      <li class="float-left">
+      <li class="float-left mx-8">
         <NavOption name="About" />
       </li>
-      <li class="float-left mx-16">
+      <li class="float-left mx-8">
         <NavOption name="Work" />
       </li>
-      <li class="float-left">
+      <li class="float-left mx-8">
         <NavOption name="Contact" />
       </li>
     </ul>
