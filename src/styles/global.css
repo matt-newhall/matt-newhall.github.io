@@ -1,9 +1,15 @@
-@font-face {
-  font-family: 'GT';
-  src: url('../../public/fonts/gt-regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'GT';
+    src: url('/fonts/gt-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 :root {
@@ -14,15 +20,23 @@
     45deg,
     rgb(var(--accent)),
     rgb(var(--accent-light)) 30%,
-    '#00BBF9' 60%
   );
 }
 
 html {
   font-family: 'GT';
-  src: url('/public/fonts/gt-regular.ttf');
+  src: url('/fonts/gt-regular.ttf');
   background: #ede7de;
   background-size: 224px;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  width: 800px;
+  max-width: calc(100% - 2rem);
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 code {
@@ -36,4 +50,41 @@ code {
     Bitstream Vera Sans Mono,
     Courier New,
     monospace;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+main {
+  margin-top: 12rem;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 1000;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 1em;
+  color: #F61067;
+}
+
+p {
+  font-size: 1rem;
+  color: #F61067;
+}
+
+[data-is-top='false'] .navbar {
+  background-color: #F9CFF2;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 100ms linear;
+}
+
+[data-is-top='true'] .navbar {
+  background-color: #ede7de;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 100ms linear;
 }
