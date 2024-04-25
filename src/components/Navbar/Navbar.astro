@@ -3,17 +3,17 @@ import NavOption from "../NavOption/NavOption.astro";
 ---
 
 <nav class="transition-colors flex w-screen justify-center align-center text-center sticky top-8">
-  <div class="navbar w-max px-12 pt-4 pb-3 rounded-full">
+  <div class="navbar w-max px-12 pt-4 pb-3 rounded-full transition-colors duration-500 ease-out">
     <ul class="inline-block">
-      <li class="float-left mx-8">
+      <a href='#about'><li class="float-left mx-8">
         <NavOption name="About" />
-      </li>
-      <li class="float-left mx-8">
+      </li></a>
+      <a href='#work'><li class="float-left mx-8">
         <NavOption name="Work" />
-      </li>
-      <li class="float-left mx-8">
+      </li></a>
+      <a href='#contact'><li class="float-left mx-8">
         <NavOption name="Contact" />
-      </li>
+      </li></a>
     </ul>
   </div>
 </nav>

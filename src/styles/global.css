@@ -12,79 +12,40 @@
   }
 }
 
-:root {
-  --accent: 136, 58, 234;
-  --accent-light: 224, 204, 250;
-  --accent-dark: 49, 10, 101;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    rgb(var(--accent-light)) 30%,
-  );
-}
-
 html {
-  font-family: 'GT';
-  src: url('/fonts/gt-regular.ttf');
-  background: #ede7de;
-  background-size: 224px;
-}
-
-main {
-  margin: auto;
-  padding: 1rem;
-  width: 800px;
-  max-width: calc(100% - 2rem);
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-code {
-  font-family:
-    'GT',
-    Menlo,
-    Monaco,
-    Lucida Console,
-    Liberation Mono,
-    DejaVu Sans Mono,
-    Bitstream Vera Sans Mono,
-    Courier New,
-    monospace;
+  @apply font-heading
 }
 
 body {
-  width: 100%;
-  position: relative;
+  @apply relative;
+  @apply w-full;
 }
 
 main {
-  margin-top: 12rem;
+  @apply m-auto;
+  @apply mt-48;
+  @apply p-4;
+  @apply w-3/5;
+  @apply text-xl;
+  @apply max-w-7xl;
 }
 
 h1 {
-  font-size: 8rem;
-  font-weight: 1000;
-  line-height: 1;
-  text-align: center;
-  margin-bottom: 1em;
-  color: #F61067;
+  @apply text-9xl;
+  @apply font-black;
+  @apply leading-none;
+  @apply text-center;
+  @apply mb-4;
+  @apply text-primary;
 }
 
 p {
-  font-size: 1rem;
-  color: #F61067;
+  @apply text-primary;
+  @apply text-base;
 }
 
 [data-is-top='false'] .navbar {
-  background-color: #F9CFF2;
-  -webkit-transition: background-color 100ms linear;
-  -ms-transition: background-color 100ms linear;
-  transition: background-color 100ms linear;
-}
-
-[data-is-top='true'] .navbar {
-  background-color: #ede7de;
-  -webkit-transition: background-color 100ms linear;
-  -ms-transition: background-color 100ms linear;
-  transition: background-color 100ms linear;
+  @apply bg-secondary;
+  @apply dark:bg-secondary-dark;
+  @apply bg-opacity-80;
 }
