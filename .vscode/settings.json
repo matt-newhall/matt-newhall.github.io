@@ -6,4 +6,5 @@
     "typescript",
     "typescriptreact"
   ],
+  "css.customData": [".vscode/tailwind.json"],
 }
